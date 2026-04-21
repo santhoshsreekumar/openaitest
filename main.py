@@ -4,7 +4,7 @@ from openai import OpenAI
 
 # Initialize the OpenAI client using OPENAIKEY environment variable
 #api_key = os.getenv('OPENAIKEY')
-api_key = "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"
+api_key = ""
 #if not api_key:
  #   raise ValueError("OPENAIKEY environment variable is not set")
 
