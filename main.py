@@ -3,10 +3,9 @@ import sys
 from openai import OpenAI
 
 # Initialize the OpenAI client using OPENAIKEY environment variable
-#api_key = os.getenv('OPENAIKEY')
-api_key = ""
-#if not api_key:
- #   raise ValueError("OPENAIKEY environment variable is not set")
+api_key = os.getenv('OPENAIKEY')
+if not api_key:
+    raise ValueError("OPENAIKEY environment variable is not set")
 
 client = OpenAI(api_key=api_key)
 
